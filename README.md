@@ -1,1 +1,1 @@
-# frontendmentor-challeges
+# personal-portfolio
