@@ -9,7 +9,7 @@
 <body>
     <main class="container">
             <div id="respFlex">
-                <img src="../assets/IMG_20221229_175359.jpg" id="profilePic" alt="" srcset="">
+                <img src="../assets/IMG_20221229_175359.jpg" id="profilePic" alt="profilePic" >
                 <div class="person">
                     <p id="name" >TIMOTHY GIATHI M.K.</p>
                     <p id="profession" >Frontend Web Developer</p>
@@ -17,15 +17,16 @@
             </div>
         <nav id="navBar">
                 <p class="navTitles">  <a href="#aboutMe">ABOUT ME</a></p>
-                <p class="navTitles"><a href="">PROJECTS</a></p>
+                <p class="navTitles"><a href="#workDone">PROJECTS</a></p>
                 <p class="navTitles"><a href="#contactMe">CONTACT ME</a></p>
+                <p class="navTitles"><a href="#reviewContainer">REVIEWS</a></p>
             </div>
         </nav>
     </main>
     <br>
     <article id="mainArticle">
-            <h2 class="articleHeaders" id="aboutMe">Unveiling Timothy</h2>
-            <p id="articleCont">Hello there &#128075; I'm Timothy, a self-taught front-end web developer passionate 
+            <h2 class="articleHeaders" id="aboutMe">UNVEILING TIMOTHY</h2>
+            <p class="articleCont">Hello there &#128075; I'm Timothy, a self-taught front-end web developer passionate 
                 about transforming ideas into visually stunning and functional websites. With 1-2 years of 
                  hands-on experience in HTML, CSS, JS and React I approach projects with infectious enthusiasm, 
                  treating each one as an opportunity for learning and perfection. My joy lies in crafting
@@ -38,47 +39,108 @@
                      connect and chat about web development or the latest industry trends!</p>
     </article>
     <br>
-    <h2 class="articleHeaders" id="contactMe">Reach Out</h2>
-    <div id="contPanel">
-
-        <form action="mailto:timothygiathi73@gmail.com" method="post" enctype="text/plain">
-            
-            <div id="flexInputs">
-                <div class="flexItem">
-                    <label for="name" class="inputLabels">Name:</label>
-                    <input type="text" class="inputs" name="name" required>
+    <section id="workDone">
+        <h2 class="articleHeaders" >PROJECTS</h2>
+        <article class="projects">
+            <h3 class="projectHeaders">Makicks (Frontend)</h3>
+            <img src="/assets/makicks landing page.PNG" alt="landing page demo" id="landingPage">
+            <p class="projectCont">Makicks is a shoe marketing website that displays the user's shoe variety to potential buyers with the prices for
+                 each shoe in a modern and stylish way that show cases the business as a trusted brand. It is also user friendly
+                with the UI architectured to suit all</p>
+                <div id="flexBtn">
+                    <button class="projectBtn"><a href="https://makicks.vercel.app/" target="_blank">Visit Makicks </a></button>
+                    <button class="projectBtn"><a href="https://github.com/TimoGiathi/makicks.git" target="_blank">View code</a></button>
                 </div>
-            
-                <div class="flexItem">
-                    <label for="email" class="inputLabels">Email:</label>
-                    <input type="email" class="inputs" name="email" required>
-                </div>
-                <div>
-                    <label for="subject" class="inputLabels">Subject:</label>
-                    <input type="text" class="inputs" name="subject" required>
+        </article>
+    </section>
+    <section id="reviewContainer">
+        <h2 class="articleHeaders"> WHAT PEOPLE SAY ABOUT ME</h2>
+       <div class="reviewFlex">
+        <div class="reviewBox">
+            <img src="./assets/quote-right-solid.svg" alt="quotation" id="quotation">
+            <p class="reviewCont">Timothy has really came through for me multiple times. I would definitely recommend him because of the assurance he has given me and my
+                firm to deliver to satisfaction
+            </p>
+            <div id="identity">
+                <img  src="../assets/IMG_20221229_175359.jpg" id="reviewPic">
+                <div id="idBox">
+                    <p class="reviewId reviewName">Fredrick Mwangi</p>
+                    <p class="reviewId">CEO, Maloba Enterprises</p>
                 </div>
             </div>
-            
-                <label for="message" class="inputLabels">Message:</label>
-                <textarea id="message" name="message" rows="4" class="inputs" required></textarea>
-        
-            <input type="submit" value="CONTACT">
-        </form>
-        <div id="iconContainer">
-            <img src="../assets/317750_linkedin_icon.png" alt="linkedin"  class="icons" >
-            <img src="../assets/twitter-x-logo-42556.jpg" alt="twitter" class="icons" >
-            <img src="../assets/317727_facebook_social media_social_icon.png " alt="facebook" class="icons">
-            <img src="../assets/2308078_discord_logo_icon.png" alt="discord" class="icons">
         </div>
-        <div id="phoneLook">
-            <img src="../assets/8726211_phone_icon.png" alt="phone" class="icons">
-            <p id="phoneNo" >+254 704 232 370</p>
+        <div class="reviewBox">
+            <img src="./assets/quote-right-solid.svg" alt="quotation" id="quotation">
+            <p class="reviewCont">Timothy has really came through for me multiple times. I would definitely recommend him because of the assurance he has given me and my
+                firm to deliver to satisfaction
+            </p>
+            <div id="identity">
+                <img  src="../assets/IMG_20221229_175359.jpg" id="reviewPic">
+                <div id="idBox">
+                    <p class="reviewId reviewName">Fredrick Mwangi</p>
+                    <p class="reviewId">CEO, Maloba Enterprises</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <script src="web.js"></script>
-    <footer style="margin-left: 500px; opacity: 0.7;">
-        <small>Made with &#x1F497; by Timothy Giathi</small>
+        <div class="reviewBox">
+            <img src="./assets/quote-right-solid.svg" alt="quotation" id="quotation">
+            <p class="reviewCont">Timothy has really came through for me multiple times. I would definitely recommend him because of the assurance he has given me and my
+                firm to deliver to satisfaction
+            </p>
+            <div id="identity">
+                <img  src="../assets/IMG_20221229_175359.jpg" id="reviewPic">
+                <div id="idBox">
+                    <p class="reviewId reviewName">Fredrick Mwangi</p>
+                    <p class="reviewId">CEO, Maloba Enterprises</p>
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+    <footer id="contactMe">
+        <h2 class="articleHeaders">REACH OUT</h2>
+       <div class="reachContainer">
+            <div>
+                <h3 class="footerHeaders">Phone</h3>
+                <div id="phone">
+                    <img src="./assets/8726211_phone_icon.png" alt="" id="phoneIcon">
+                    <div>
+                        <p class="numbers">+254 704232370</p>
+                        <p class="numbers">+254 754004682</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="footerHeaders">Socials</h3>
+                <div id="socials">
+                    <div class="socialsCont">
+                        <img src="./assets/twitter-x-logo-42556.jpg" alt="misssing icon" class="icons">
+                        <p class="socialName">Twitter</p>
+                    </div>
+                    <div class="socialsCont">  
+                        <img src="./assets/317727_facebook_social media_social_icon.png" alt="misssing icon" class="icons">
+                         <p class="socialName">Facebook</p>
+                    </div>
+                    <div class="socialsCont">
+                        <img src="./assets/317750_linkedin_icon.png" alt="misssing icon" class="icons">
+                        <p class="socialName">Linkedin</p>
+                    </div>
+                    <div class="socialsCont">
+                        <img src="./assets/square-github.svg" alt="misssing icon" class="icons">
+                        <p class="socialName">Github</p>
+                    </div>
+                </div>
+            </div>
+            <div id="message">
+                <h3 class="footerHeaders messageLabel">Want to send a message ?</h3>
+                <input type="text" id="messageInput">
+                <button type="submit" id="submit">SUBMIT</button>
+            </div>
+       </div>
     </footer>
+    <small>Made with &#x1F497; by Timothy Giathi</small>
+    <small>&copy;2024  Timothy Giathi servisces. All rights reserved </small>
+    <script src="web.js"></script>
 </body>
 
 </html>

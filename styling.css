@@ -1,212 +1,254 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap");
 
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-a{
-    color: #f4f4f4;
-    text-decoration: none;
+a {
+  color: #f4f4f4;
+  text-decoration: none;
 }
-a:hover{
-    color: orange;
+a:hover {
+  color: orange;
 }
-a:active{
-    color: purple;
+a:active {
+  color: purple;
 }
-.container{
-    margin: 0;
-    padding: 40px;
-    overflow: hidden; 
-    color: white;
-    background-image: url('../assets/background\ image.jpg');
-    background-repeat: none;
-    background-size: cover;
-    height:100vh;
-   /* background-color: #f0f0f0; */
+small {
+  margin: 0px 500px;
 }
-
-#respFlex{
-    margin:100px 200px;
-    display: flex;
-    flex-shrink: 0;
-}
-#profilePic{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: solid 3px skyblue;
-}
-#name{
-    font-family:'Lato',sans-serif ;
-    font-weight: 700;
-    font-size: 2.5rem;
-    letter-spacing: 4px;
-}
-.person{
-    margin: 55px 15px;
-}
-#profession{
-    font-family:'Open Sans',sans-serif;
-    font-size: 1.6rem;
-    margin: 15px 20px;
-
-}
-#navBar{
-    font-family: 'Lato',sans-serif;
-    font-weight: 600;
-    display: flex;
-    gap: 50px;
-    margin-left: 300px;
-    border-top: solid 5px #f4f4f4;
-    border-bottom: solid 2px #f4f4f4;
-    width: fit-content;
-
-}
-.navTitles{
-    padding: 10px 30px;
-    letter-spacing: 2px;
-    color:#f4f4f4;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-.navTitles:hover{
-    color:orange;
-    transform: scale(1.3);
+.container {
+  margin: 0;
+  padding: 40px;
+  overflow: hidden;
+  color: white;
+  background-image: url("../assets/background\ image.jpg");
+  background-repeat: none;
+  background-size: cover;
+  height: 100vh;
+  /* background-color: #f0f0f0; */
 }
 
-.articleHeaders{
-    margin: 15px 500px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    opacity: 0.6;
-    color: blue;
-    letter-spacing: 2px;
+#respFlex {
+  margin: 100px 200px;
+  display: flex;
+  flex-shrink: 0;
 }
-#articleCont{
-    font-size: 20px;
-    font-weight: 500;
-    opacity: 0.7;
-    font-family: 'Lato';
-    line-height: 1.3em;
-
+#profilePic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: solid 3px skyblue;
 }
-.inputLabels{
-    font-size: 20px;
-    font-weight: 600;
-    font-family:'Open Sans';
-    color:hsl(0, 0%, 20%);
-    display: block;
+#name {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 4px;
 }
-.inputLabels::after{
-    content: "*";
-    color: purple;
-    font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
+.person {
+  margin: 55px 15px;
 }
-.inputs{
-    display: block;
-    margin: 10px;
-    padding: 12px;
-    border:2px solid hsl(0, 0%, 60%);
-    width: 300px;
-    border-radius: 9px;
+#profession {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  margin: 15px 20px;
 }
-.inputs:focus{
-    border-color:hsl(210, 100%, 50%);
-    outline: none;
+#navBar {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  display: flex;
+  gap: 50px;
+  margin-left: 300px;
+  border-top: solid 5px #f4f4f4;
+  border-bottom: solid 2px #f4f4f4;
+  width: fit-content;
 }
-#flexInputs{
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.navTitles {
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  color: #f4f4f4;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-size: 1.8rem;
 }
-.flexItem{
-    flex-shrink: 0;
-}
-input[type="submit"] {
-    background-color:purple; 
-    color: #fff; 
-    padding: 10px 15px; 
-    font-size: 16px; 
-    border: none; 
-    cursor: pointer; 
-    border-radius: 5px;
-    font-weight: 500;
-    margin: 20px 400px;
-}
-#contPanel{
-    margin:0px 0px 0px 150px;
-}
-.icons{
-    width: 40px;
-    height: 40px;
-    margin: 15px;
-}
-#phoneLook{
-    display: flex;
-    align-items: center;
-}
-#phoneNo{
-    font-family: 'Lato';
-    font-weight: bold;
-}
-#iconContainer{
-    margin-left: 300px;
+.navTitles:hover {
+  color: orange;
+  transform: scale(1.3);
 }
 
-@media (max-width: 768px){
-    #profilePic{
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-    }
-    #respFlex{
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto ;
-  }
-  .person{
-    flex-shrink: 9;
-  }
-  .articleHeaders{
-    margin: 15px 150px;
-  }
-  #flexInputs{
-    display: flex;
-    flex-direction: column;
-   align-items: flex-start;
-    gap: 30px;
-  }
-  .container{
-    margin: 0;
-    padding: 40px;
-    overflow: hidden; 
-    color: white;
-    background-image: url(../assets/background\ image.jpg);
-    background-repeat: none;
-    background-size: cover;
-    height:110vh;
-   /* background-color: #f0f0f0; */
- }
- #navBar{
-    gap: 10px;
-    margin: 50px auto;
- }
- input[type="submit"] {
-    margin: 20px auto;
- }
- #iconContainer{
-    display: flex;
-    margin: 0px auto;
- }
- #name{
-   color:#fff;
- }
- .navTitles:hover{
-    color: purple;
- }
-
- 
+.articleHeaders {
+  margin: 15px 500px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0.6;
+  color: blue;
+  letter-spacing: 2px;
+}
+.articleCont {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 0.7;
+  font-family: "Lato";
+  line-height: 1.3em;
+  margin: 20px 20px;
+}
+#landingPage {
+  height: 200px;
+  width: 500px;
+}
+.projectsContainer {
+  margin: 0px 30px;
+  padding: 9px;
+}
+.projects {
+  max-width: 600px;
+  border-radius: 9px;
+  background-color: #eae6e6;
+  text-align: center;
+  padding: 10px;
+}
+.projectBtn {
+  background-color: purple;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  max-width: fit-content;
+}
+#flexBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+.projectHeaders {
+  font-family: "Lato";
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+.projectCont {
+  font-family: "Open Sans";
+  text-align: justify;
+  opacity: 0.8;
+}
+#reviewPic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 3px solid rgb(9, 34, 97);
+  padding: 1px;
+}
+.reviewBox {
+  max-width: 500px;
+  /* background-color: #eae8e8;*/
+  border: 3px solid #d2d0d0;
+  padding: 8px;
+  border-radius: 15px;
+}
+#identity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 16px;
+}
+.reviewId {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.reviewName {
+  color: rgb(9, 34, 97);
+  font-weight: 600;
+  font-family: "Lato";
+}
+#quotation {
+  margin-left: 20px;
+}
+#reviewContainer {
+  margin: 50px 10px;
+}
+.reviewCont {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Lato";
+  margin: 20px 10px;
+}
+#workDone {
+  margin: 30px 10px;
+}
+.reviewFlex {
+  display: flex;
+  gap: 10px;
+}
+.icons {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+#phoneIcon {
+  height: 40px;
+  width: 40px;
+}
+#contactMe {
+  background-color: #eae6e6;
+  margin: 30px 10px 0px 10px;
+  padding: 9px 15px 15px 15px;
+}
+.reachContainer {
+  display: flex;
+  justify-content: space-around;
+}
+#phone {
+  display: flex;
+}
+#socials {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.numbers {
+  font-family: "Lato";
+  font-weight: 600;
+}
+#messageInput {
+  padding: 15px;
+  width: 100%;
+  border: 2px solid #cecbcb;
+  border-radius: 4px;
+}
+#messageInput:focus {
+  border: 3px solid rgb(59, 211, 246);
+}
+#submit {
+  background-color: rgb(126, 244, 126);
+  border: none;
+  padding: 9px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 15px auto;
+}
+#submit:hover {
+  background-color: purple;
+  border-radius: 5px;
+}
+.socialsCont {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 5px;
+}
+.footerHeaders {
+  font-family: "Lato";
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+.messageLabel {
+  font-family: "Rubik Gemstones";
+  font-size: 30px;
 }
