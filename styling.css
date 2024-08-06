@@ -1,254 +1,187 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-a {
-  color: #f4f4f4;
-  text-decoration: none;
-}
-a:hover {
-  color: orange;
-}
-a:active {
-  color: purple;
-}
-small {
-  margin: 0px 500px;
-}
-.container {
-  margin: 0;
-  padding: 40px;
-  overflow: hidden;
-  color: white;
-  background-image: url("../assets/background\ image.jpg");
-  background-repeat: none;
-  background-size: cover;
-  height: 100vh;
-  /* background-color: #f0f0f0; */
-}
 
-#respFlex {
-  margin: 100px 200px;
-  display: flex;
-  flex-shrink: 0;
-}
-#profilePic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: solid 3px skyblue;
-}
-#name {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  letter-spacing: 4px;
-}
-.person {
-  margin: 55px 15px;
-}
-#profession {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
-  margin: 15px 20px;
-}
-#navBar {
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  display: flex;
-  gap: 50px;
-  margin-left: 300px;
-  border-top: solid 5px #f4f4f4;
-  border-bottom: solid 2px #f4f4f4;
-  width: fit-content;
-}
-.navTitles {
-  padding: 10px 30px;
-  letter-spacing: 2px;
-  color: #f4f4f4;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  font-size: 1.8rem;
-}
-.navTitles:hover {
-  color: orange;
-  transform: scale(1.3);
-}
-
-.articleHeaders {
-  margin: 15px 500px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  opacity: 0.6;
-  color: blue;
-  letter-spacing: 2px;
-}
-.articleCont {
-  text-align: justify;
-  font-size: 20px;
-  font-weight: 500;
-  opacity: 0.7;
-  font-family: "Lato";
-  line-height: 1.3em;
-  margin: 20px 20px;
-}
-#landingPage {
-  height: 200px;
-  width: 500px;
-}
-.projectsContainer {
-  margin: 0px 30px;
-  padding: 9px;
-}
-.projects {
-  max-width: 600px;
-  border-radius: 9px;
-  background-color: #eae6e6;
-  text-align: center;
-  padding: 10px;
-}
-.projectBtn {
-  background-color: purple;
-  border: none;
-  padding: 5px;
-  border-radius: 4px;
-  max-width: fit-content;
-}
-#flexBtn {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: flex-end;
-  margin-top: 10px;
-}
-.projectHeaders {
-  font-family: "Lato";
-  opacity: 0.7;
-  margin-bottom: 10px;
-}
-.projectCont {
-  font-family: "Open Sans";
-  text-align: justify;
-  opacity: 0.8;
-}
-#reviewPic {
+#profile {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  margin-right: 10px;
-  border: 3px solid rgb(9, 34, 97);
-  padding: 1px;
 }
-.reviewBox {
-  max-width: 500px;
-  /* background-color: #eae8e8;*/
-  border: 3px solid #d2d0d0;
-  padding: 8px;
-  border-radius: 15px;
+body {
+  background-color: #ffffff;
 }
-#identity {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 16px;
+header {
+  background-color: #0e1111;
+  color: #ffffff;
 }
-.reviewId {
-  font-size: 18px;
-  font-weight: 500;
-  opacity: 0.9;
+ul {
+  list-style-type: none;
 }
-.reviewName {
-  color: rgb(9, 34, 97);
-  font-weight: 600;
-  font-family: "Lato";
-}
-#quotation {
-  margin-left: 20px;
-}
-#reviewContainer {
-  margin: 50px 10px;
-}
-.reviewCont {
-  text-align: justify;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "Lato";
-  margin: 20px 10px;
-}
-#workDone {
-  margin: 30px 10px;
-}
-.reviewFlex {
-  display: flex;
-  gap: 10px;
-}
-.icons {
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-}
-#phoneIcon {
-  height: 40px;
-  width: 40px;
-}
-#contactMe {
-  background-color: #eae6e6;
-  margin: 30px 10px 0px 10px;
-  padding: 9px 15px 15px 15px;
-}
-.reachContainer {
+.navbar {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 12px;
 }
-#phone {
+.navItems {
   display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
-#socials {
+.intro {
+  border: 1px solid #9b9a9a;
+  border-radius: 20px;
+  text-align: left;
+  padding: 50px;
+  align-items: start;
+}
+.intro p {
+  margin: 20px;
+}
+#avatar {
+  height: 450px;
+  width: 340px;
+  border-radius: 20px;
+}
+.introContainer {
+  display: flex;
+  max-width: 80%;
+  justify-content: center;
+  gap: 20px;
+  margin: 80px auto;
+}
+.connect,
+.introParagraph {
+  font-family: system-ui, sans-serif;
+  font-weight: 500;
+}
+.connect,
+.tools button {
+  background-color: #4d66e3;
+  color: #ffffff;
+  border: none;
+  padding: 20px 40px;
+  max-width: fit-content;
+  border-radius: 30px;
+}
+.tools p {
+  text-align: justify;
+}
+.introParagraph {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.7em;
+}
+.intro {
+  flex: 1 1 auto;
+}
+.intro2 {
+  flex: 1 1 auto;
+}
+h2 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+.sections {
+  max-width: 70%;
+  margin: 20px auto;
+}
+.sections p,
+.skills ul li {
+  margin-top: 20px;
+  font-family: system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.7em;
+  text-align: center;
+}
+.skills p {
+  font-family: "Quicksand";
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contactArea fieldset {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 10px;
+  padding: 12px;
 }
-.numbers {
-  font-family: "Lato";
-  font-weight: 600;
-}
-#messageInput {
-  padding: 15px;
-  width: 100%;
-  border: 2px solid #cecbcb;
-  border-radius: 4px;
-}
-#messageInput:focus {
-  border: 3px solid rgb(59, 211, 246);
-}
-#submit {
-  background-color: rgb(126, 244, 126);
-  border: none;
-  padding: 9px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 18px;
-  margin: 15px auto;
-}
-#submit:hover {
-  background-color: purple;
-  border-radius: 5px;
-}
-.socialsCont {
+#flexLabel {
   display: flex;
   align-items: center;
-  font-weight: 600;
   gap: 5px;
 }
-.footerHeaders {
-  font-family: "Lato";
-  opacity: 0.8;
-  margin-bottom: 15px;
+input[type="text"] {
+  padding: 9px;
+  width: 250px;
 }
-.messageLabel {
-  font-family: "Rubik Gemstones";
-  font-size: 30px;
+fieldset {
+  border-radius: 12px;
+}
+input[type="submit"] {
+  max-width: fit-content;
+  align-self: self-end;
+  padding: 10px 15px;
+  background-color: green;
+  color: #ffff;
+  font-weight: 500;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.projectBtn {
+  margin-left: 10px;
+}
+footer ul {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+.projects img {
+  height: 300px;
+  width: 500px;
+}
+.projects article {
+  max-width: 500px;
+}
+.projects p {
+  opacity: 0.7;
+}
+.logos {
+  width: 80px;
+  height: 80px;
+  background-color: #fafbfc;
+  padding: 15px;
+  border-radius: 8px;
+}
+.tools ul {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+.icons {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.flexSocials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#web {
+  width: 150px;
+  height: 150px;
+  margin: 20px 0 0 0;
+  position: relative;
+  left: 400px;
 }
